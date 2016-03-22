@@ -1,7 +1,3 @@
 #learnpython_2
-a = 'abc'
-b = a 
-a = 'dfg'
-print(b)
-
-print(PI)
+n1 = 255
+print(hex(n1))
