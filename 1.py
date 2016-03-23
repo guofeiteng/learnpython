@@ -102,3 +102,34 @@ L = ['TONY','MAY','BABA']
 for M in L:
 	print('hello',M,'!')
 
+n1 = -255
+print(hex(n1))
+
+def my_abs(x):
+	if x >= 0:
+	    return x
+	else:
+		return -x
+
+print(my_abs(n1))
+
+import math
+def move(x,y,step,angle=0):
+	nx = x + step * math.cos(angle)
+	ny = y - step * math.sin(angle)
+	return nx, ny
+
+x , y = move(100,100,60,math.pi/6)
+print(x,y)
+r = move(100,100,60,math.pi/6)
+print(r)
+
+import math
+def quadratic(a,b,c):
+	D1 = math.sqrt(b * b - 4 * c *a)
+	D2 = -math.sqrt(b * b - 4 * c * a)
+	x1 = (D1 - b)/ (2 * a) 
+	x2 = (D2 - b)/ (2 * a)
+	return x1, x2
+x1, x2 = quadratic(2,3,1)
+print(x1, x2)
