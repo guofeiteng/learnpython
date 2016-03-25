@@ -133,3 +133,56 @@ def quadratic(a,b,c):
 	return x1, x2
 x1, x2 = quadratic(2,3,1)
 print(x1, x2)
+
+
+def power(x,n):
+    s = 1
+    while n > 0:
+    	n = n - 1 
+    	s = s * x
+    return s
+print(power(5,2))
+
+def add_end(L=[]):
+    L.append('END')
+    return L
+print(add_end())
+print(add_end())
+print(add_end())
+print(add_end())
+
+
+def calc(number):
+	sum = 0
+	for n in number:
+		sum = sum + n * n
+	return sum
+
+print(calc([1,2,3]))
+
+def calc(*number):
+	sum = 0
+	for n in number:
+		sum = sum + n * n
+	return sum
+
+print(calc(1,2,3))
+
+
+
+def fact(n):
+	if n==1:
+	    return 1
+	return n * fact(n-1)
+print (fact(5))
+
+
+#print (1,3,5,7.............99)
+L = []
+n = 1
+while n <= 99:
+	L.append(n)
+	n = n + 2
+print(L)
+
+print(list(range(100))[1::2])
